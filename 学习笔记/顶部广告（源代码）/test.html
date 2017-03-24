@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>顶部广告展开收起</title>
+<style>
+	body{margin:0px;padding: 0px;}
+	#top{ text-align:center;height: 0px;}
+	#suolue{text-align:center;display: none;}
+	#close{font-size: 12px;width: 12px;height: 12px ; position:absolute;top: 0px;right:192px;display: inline-block;background: yellow;}
+	#close:hover{background: #333;}
+	#center{text-align:center;}
+</style>
+<script type="text/javascript">
+	function getId(name)
+	{
+		var element =document.getElementById(name);
+		return element;
+	}
+	var height = 0;
+	var maxHeight = 386;
+	var minHeight = 55;
+	function getId(name)
+	{
+		var element =document.getElementById(name);
+		return element;
+	}
+	function open()
+	{
+		if (height <=maxHeight) 
+		{
+			height += 1;
+			getId("top").style.height =height+"px";
+			setTimeout(open,10);
+		}else
+		{
+			setTimeout(down,3000);
+		}
+
+	}
+	function down()
+	{
+		if (height >= minHeight) 
+		{
+			height -=1;
+			setTimeout(down,10);
+			getId("top").style.height =height+"px";
+		}else
+		{
+			getId("top").style.display="none";
+			getId("suolue").style.display ="block"
+		}
+	}
+	 function close1()
+	{
+		getId("suolue").style.display ="none";
+	}
+</script>
+</head>
+<body onload="open()">
+	<div id="suolue">
+		<img   src="cur.png" name="suolue" width="962px">
+		<span id="close" onclick="close1()">X</span>
+	</div>
+	<div id="top">
+		<img src="ad.png">
+	</div>
+	<div id="center">
+		<img src="数字商品-10-23.jpg">
+	</div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.radioGroup label::before, .radioGroup label::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+}
+.radioGroup label::before {
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.25),
+              0 2px 5px 6px rgba(0, 0, 0, 0.5) inset;
+}
+.radioGroup label::after {
+  background: #79EAC5;
+  opacity: .2;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+}              .radioGroup label:hover::after {
+  -webkit-transform: scale(0.6);
+  -ms-transform: scale(0.6);
+  -o-transform: scale(0.6);
+  transform: scale(0.6);
+  opacity: 1;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+}
+.radioGroup input:checked + label::after {
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  box-shadow: 0 0 15px -1px #79EAC5;
+}               
+	</style>
+</head>
+<body>
+	<fieldset tabindex="0" class='radioGroup'>
+  <legend>Cool radio buttons:</legend>
+  <input id='g1o1' name="group1" value="option1" checked type="radio">
+  <label for='g1o1'>Hell yeah</label>
+  <input id='g1o2' name="group1" value="option2" type="radio">
+  <label for='g1o2'>A little</label>
+  <input id='g1o3' name="group1" value="option3" type="radio">
+  <label for='g1o3'>Nope</label>
+</fieldset>
+</body>
+</html>

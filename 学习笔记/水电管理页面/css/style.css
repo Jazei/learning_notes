@@ -1,0 +1,46 @@
+/* Base CSS Document */
+html{background:#F5F5F5;}
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select,img{margin:0;padding:0;}
+html,body{height:100%!important; background-color:#FFFFFF;}
+body,button,input,select,textarea{font:12px/1.5 Tahoma,Arial,'Hiragino Sans GB','Microsoft YaHei',\5b8b\4f53,sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+ul,ol,dl{list-style:none;}
+ul.default{list-style:disc inside;}
+ol.default{list-style:decimal inside;}
+fieldset,img{border:0 none;}
+table{border-collapse:collapse;border-spacing:0;}
+button,input,select,textarea{font-size:100%;}
+sup{vertical-align:text-top;}
+sub{vertical-align:text-bottom;}
+small{font-size:12px;}
+a{text-decoration:none;outline:none;color:#FFF;}
+a:visited{color:#FFF;}
+a:hover{color:#DDD;}
+.clearfix:before,.clearfix:after{display:table;content:" ";}
+.clearfix:after{clear:both;}
+.clear{clear:both;}
+.img-responsive{display:block;max-width:100%;height:auto;}
+.container{width:100%;height:auto;margin:0 auto;overflow:hidden;}
+.margin-top-10{margin-top:10px;}
+.left{float:left;}
+.right{float:right;}
+.none{display:none;}
+.red{background:red;}
+.text-right{text-align:right;}
+.line-top{border-top:solid 1px #EBEBEB;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

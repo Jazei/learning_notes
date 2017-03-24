@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>siblings()、parent()、parents()的测试</title>
+		<script type="text/javascript" src="JS/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body>
+		<div class="c">
+			你好啊！
+			<span>完美的</span>
+			<strong>新<span>/新</span></strong>
+			<div>世界 !
+				<h1>真是个美好的世界！</h1>
+			</div>
+			<span>阿萨德撒大</span>
+			<input type="text" value="我是input 文本框" />
+		</div>
+	</body>
+	<script type="text/javascript">
+	 $(".c div").siblings().css("color","yellow");
+//	 $(".c div h1").parent().css("color","green");
+//	 $(".c input").parent().children().css("color","red");s
+	</script>
+</html>

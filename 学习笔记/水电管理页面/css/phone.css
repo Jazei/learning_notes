@@ -1,0 +1,119 @@
+.bg{background-image: url(../images/bg.png);}
+
+/* login CSS Document */
+#lb{width: 100%;height: 15%;}
+#head{width: 100%;height: auto;background-color: #348DDD;}
+#head .bws{width:320px; height:auto;margin:0 auto;}
+#head ul{width: 87%;height: auto;padding-left: 13%;}
+#head ul li{width: auto;height: auto;float: left;margin: 10px 2%;}
+#head ul li.isn{display:none;}
+
+#banner .bantext{width: 245px;height: 39px;margin: 20px auto;}
+
+#box{width:100%; height: auto;margin-top: 4%;overflow: visible;}
+#login{width:263px;height: auto;}
+#login .inputdiv{width: auto;height: auto;border: 1px solid #E9E9E9;border-radius: 5px; padding: 10px;background-color: #F3F3F5;} 
+#login .inputdiv ul li{position: relative;display: inline-block;z-index: 1;  margin-bottom: 2%;}
+#login .inputdiv ul li.current{margin:0;}
+#login .inputdiv ul li input{width: 222px;height: 36px;margin-left: 5px;padding-left: 10px;border: 1px solid #B7BAC1;border-radius: 5px;outline: none;font-size: 16px;background: transparent;}
+#login .inputdiv ul li span{width: auto;height: auto;position: absolute;left: 10px;top: 5px;font-size: 16px;color: #B7BAC1;z-index: -999;}
+#login .subdiv{width: 30%;height:38px; margin: 8% auto;}
+#login .subdiv input{width: 100%;height: 100%;font-size: 18px;border: 0;color: #FFF;background: #348DDD;border-radius: 5px;}
+
+.loginerror{width: auto;height: auto;text-align: center;font-size: 16px;color: red;font-weight: bold;}
+
+
+/* manage CSS Document */
+#head dl{width: auto;height: auto;padding: 10px;}
+#head dl dt{width: auto;height: auto;float: left;margin: 0 5px;}
+#head dl dt.marbor{width: auto;height: 40px;margin:9px 0 0 10px;border-left: 1px solid #FFFFFF;padding-left: 10px;font-size: 22px; color: #FFF;display:none;}
+#head dl dd{width: auto;height: auto;float: right;margin-right: 20px;}
+#head dl dd.dnone{display:none;}
+#head dl dd div{float: left;margin: 10px 5px 0 0;}
+#head dl dd span{width: auto;height: auto;display: inline-block;margin-top: 18px;color: #FFF;}
+
+#manage{margin-top: 0}
+#manage .conleft{width: 100%; height: auto;float: left;background: #FFF;border: 1px solid #E3E3E3;padding-bottom: 10px;}
+#manage .conleft dl dd{width: 33%;height: auto;font-size: 1.16em;margin: 5px 0 0 0;cursor: pointer;float: left;text-align: center;}
+#manage .conleft dl dd.current{color:red;}
+#manage .conleft dl dd a{width: auto;height: auto;color: #000;}
+#manage .conleft dl dd a:hover{color:#DDD;}
+#manage .conright{width: 100%;height: auto;float: left;background-color: #F0F0F0;;}
+#manage .conright .bannertop{margin-bottom: 10px;height: 28px;display:none;}
+#manage .conright .bannertop i{width: 28px;height: 28px;background-color: #D7DEE4;float: left;}
+#manage .conright .bannertop i img{margin:6px auto;}
+#manage .conright .bannertop p{width: 60px;height: 23px;float: left;background-color: #D7DEE4;text-align: center;padding-top: 5px;}
+#manage .conright .bannermid{width: 100%;height: auto;background-color: #fff;border: 1px solid #E3E3E3;display:none;}
+#manage .conright .bannermid ul li{margin-top: 10px;}
+#manage .conright .bannermid ul li dl{display:none;}
+#manage .conright .bannermid ul li.mg{margin:15px 0;}
+#manage .conright .bannermid ul li dl dt{float: left;margin-right: 20px;}
+#manage .conright .bannermid ul li dl dt span{color: #D4D4D4;font-size: 16px;}
+#manage .conright .bannermid ul li dl dt select{width: 100px;height: 22px;border: 1px solid #D4D4D4;outline: none;}
+#manage .conright .bannermid ul li dl dt .inputs{width:100px;height: 22px;border: 1px solid #D4D4D4;outline: none;padding-left: 5px;}
+#manage .conright .bannermid ul li dl dt .but{width: 50px;height: 24px;border: 0;background-color: #3BA6D2;border-radius: 3px;margin-left: 5px;color:#FFF;outline: none;}
+#manage .conright .bannermid ul li dl dd{float: right;margin-left: 10px;display:none;}
+#manage .conright .bannermid ul li dl dd .but{width: 50px;height: 24px;border: 0;background-color: #8F74D3;border-radius: 3px;margin-left: 5px;color:#FFF;outline: none;}
+#manage .conright .bannermid ul li dl dd .but.col1{background-color:#D76565;}
+#manage .conright .bannermid ul li dl dd .but.col2{background-color:#DB8E64;}
+#manage .conright .bannermid ul li table{width: 100%;height: 386px;text-align: center;overflow: hidden;}
+#manage .conright .bannermid ul li table thead tr{background-color: #DFF1FF;}
+#manage .conright .bannermid ul li table thead tr th{border: 1px solid #AAAAAA;padding: 5px; font-size: 14px;color:#94A1AA;}
+#manage .conright .bannermid ul li table tbody tr td{border: 1px solid #AAAAAA;padding: 5px; font-size: 14px;color:#BABABA;}
+#manage .conright .bannermid ul li>span{width:auto;height: auto;color:#BABABA;border: 1px solid #D6D6D4;background-color: #F0F0F0;padding: 5px 10px;cursor: pointer;}
+#manage .conright .bannermid ul li>span.current{background: #378EDD;color:#FFF;}
+
+#manage .conright .phoneshow{width:100%; height:auto;font-size: 1.2em;}
+#manage .conright .phoneshow .mx{width:80%; height: auto; margin:2% auto;font-size: 0.9em;color:#B3B2B2;}
+#manage .conright .phoneshow dl{width:100%;height:auto;margin:1% auto;border-bottom: 1px solid rgb(210, 210, 210);}
+#manage .conright .phoneshow dl dt{width:auto;height:auto;background-color: #fff;}
+#manage .conright .phoneshow dl dt ul{width:90%;margin:0 auto;position:relative;}
+#manage .conright .phoneshow dl dt ul li{width:50%;float: left;text-align: center;  margin: 3% 0;}
+#manage .conright .phoneshow dl dt ul li.current{width:100%;position:absolute;top:24%;left:-45%;transition:all  ease 0.5s;transform:rotate(0);}
+
+#manage .conright .phoneshow dl dd{width:auto;height:auto;font-size: 0.8em;display:none;}
+#manage .conright .phoneshow dl dd ul{width:78%;margin:0 auto;}
+#manage .conright .phoneshow dl dd ul li{width:33%;float: left;text-align: center;  margin: 3% 0;}
+
+
+
+.bgs{display:none;position:absolute;top:0;left:0;width:100%;height: 100%;filter:alpha(opacity=60);opacity:0.6;background:#000;z-index:9999; }
+.mycar-list,.mycar-list2{display:none;position:absolute;top:160px;left:50%;width:618px;height:306px;margin-left:-337px;background:white;z-index:99999;}
+.mycar-list .top{width: auto;height: auto;background-color: #348DDD;font-size: 18px;color:#FFF;padding: 10px;}
+.mycar-list .top p{float: left;}
+.mycar-list .top .cha{float: right;cursor: pointer;}
+.mycar-list .contain{margin:20px 50px;}
+.mycar-list .contain dl{width:50%;float: left;}
+.mycar-list .contain dl dt,.mycar-list .contain dl dd{margin:10px 0;}
+.mycar-list .contain dl dt .inputs{border: 1px solid #D4D4D4;outline: none;padding-left: 5px;}
+.mycar-list .contain dl dt span{width: 45px;color:#C4C4C4;text-align: right;display: inline-block;letter-spacing: 5px;}
+.mycar-list .contain dl dt select{width: 146px;height: auto;border: 1px solid #D4D4D4;outline: none;}
+.mycar-list .contain dl dd span{width: 60px;color:#C4C4C4;text-align: right;display: inline-block;letter-spacing: 5px;}
+.mycar-list .contain dl dd .inputs{width: 160px;border: 1px solid #D4D4D4;outline: none;padding-left: 5px;}
+.mycar-list .contain dl dd select{width: 166px;height: auto;border: 1px solid #D4D4D4;outline: none;}
+.mycar-list .contain dl dt .butn{width: 80px;height: 30px;background-color: #3BA6D2;font-size: 16px;color:#FFF;border: 0;border-radius: 5px;margin:10px 0 0 73px;outline: none;}
+.mycar-list .contain dl dd .butn2{width: 80px;height: 30px;background-color: #DD3535;font-size: 16px;color:#FFF;border: 0;border-radius: 5px;margin:10px 0 0 103px;outline: none;}
+
+.mycar-list2 .top{width: auto;height: auto;background-color: #348DDD;font-size: 18px;color:#FFF;padding: 10px;}
+.mycar-list2 .top p{float: left;}
+.mycar-list2 .top .cha{float: right;cursor: pointer;}
+.mycar-list2 .contain .conbg{display:none;position:absolute;top:0;left:0;width:100%;height: 100%;filter:alpha(opacity=60);opacity:0.6;background:#000;z-index:9999; }
+
+.mycar-list2 .contain .uploader{border: 2px dotted #A5A5C7;width: 90%;  height: 155px;margin:22px auto;color: #92AAB0;
+text-align: center;vertical-align: middle;margin-bottom: 10px;font-size: 24px;cursor: default;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+.mycar-list2 .contain .uploader p{position:absolute;    width: 90%;height: 155px;cursor:pointer;padding-top: 45px;}
+.mycar-list2 .contain .uploader .form{position:absolute;width: 89%;height: 155px;}
+.mycar-list2 .contain .uploader .form .put {width:100%;height:155px;margin: 0;opacity: .0;filter: alpha(opacity= 0);-o-transform: translate(250px,-50px) scale(1);-moz-transform: translate(-300px,0) scale(4);direction: ltr;cursor: pointer;}
+.mycar-list2 .contain .uploader .form .sub {width:300px;height:33px;background-color: #5a7bc2;border:  0;font-size: 14px;color: white;font-weight: bold;border-radius: 2px;box-shadow: 2px 2px 2px #888888;cursor:pointer;margin-top: 22px;letter-spacing: 7px;}
+.mycar-list2 .contain .uploader .form .sub:hover {background-color: #427fed;}
+.mycar-list2 .contain .uploader .form .date{width: 100px;height: 30px;border-radius: 5px;position: absolute;left: 0;bottom: -57px;cursor: pointer;outline: none;font-size: 12px;}
+.mycar-list2 .contain .uploader .form .xs{width: 100px;height: 30px;position: absolute;right: 0;bottom: -41px;outline: none;font-size: 12px;border: 0;color:red;}
+.mycar-list2 .contain .uploader .form .tp{width: 100px;height: 30px;position: absolute;right: 0;bottom: -74px;outline: none;font-size: 12px;border: 0;color:#000;}
+
+.tipbox{width: 78%;height: 155px;position: fixed;right: 5px;bottom: -160px;z-index: 999999;background-color: #378EDD;border: 1px solid #378EDD;transition:all 2s ease;}
+.tipbox .tipx{color:#FFF;width:auto;height: 23px;margin:0 5px;font-size: 16px;}
+.tipbox .tipx .df{float: left;}
+.tipbox .tipx .ds{float: right;cursor: pointer;}
+.tipbox .tipboxs{width:96%; height:122px; margin:5px;background-color: #fff;color:red;text-align: center;line-height: 120px;font-size: 1.5em;}
+
+

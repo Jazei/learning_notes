@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>wrap()、wrapAll()、wrapInner()包裹节点.html</title>
+		<script type="text/javascript" src="JS/jquery-3.1.1.min.js" ></script>
+		<style type="text/css">
+			div{width: 100px; height: 80px; margin-bottom: 10px;}
+			.a{background: red;}
+			.b{background: blue;}
+			.c{background: yellow;}
+			.d{background: green;}
+			.e{background: saddlebrown;}
+			.f{background: sandybrown;width: 300px; height: 100px;}
+			.g{background: cadetblue;width: 300px; height: 100px;}
+			.h{background: silver;width: 80px; height: 50px;}
+			.col{color: white;}
+			.back{background: fuchsia;}
+		</style>
+	</head>
+<body>
+		<div class="a">第一个DIV<h1>ooo</h1></div>
+		<div class="b"> 第二个DIV<h1>ooo</h1></div>
+		<div class="c">第三个DIV<h1>ooo</h1></div>
+		<div class="d">第四个DIV<h1>ooo</h1></div>
+		<div class="e">第五个DIV<h1>ooo</h1></div>
+	
+	</body>
+	<script >
+		$('.a').wrap("<div class='f'></div>");
+		$('.b').wrap("<div class='f'></div>");
+		
+		$('.c').wrapAll("<div></div>");
+		$('.e').wrapAll("<div></div>");
+		
+		$('.d').wrapInner("<div class='h'></div>");
+	</script>
+</html>

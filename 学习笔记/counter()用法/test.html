@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+<meta charset="utf-8" />
+<title>counter()函数_CSS参考手册_web前端开发参考手册系列</title>
+<meta name="author" content="Joy Du(飘零雾雨), dooyoe@gmail.com, www.doyoe.com" />
+<style>
+ol {
+	margin: 0;
+	padding: 0 0 0 2em;
+	list-style: none;
+	counter-reset: a;
+}
+li:before {
+	counter-increment: a;
+	content: counter(a)".";
+	color: #f00;
+}
+</style>
+</head>
+<body>
+<ol class="test">
+	<li>Node
+		<ol>
+			<li>Node
+				<ol>
+					<li>Node</li>
+					<li>Node</li>
+					<li>Node</li>
+				</ol>
+			</li>
+			<li>Node</li>
+		</ol>
+	</li>
+</ol>
+<ol>
+	<li>Node</li>
+	<li>Node</li>
+</ol>
+	
+
+</body>
+</html>

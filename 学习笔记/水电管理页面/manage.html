@@ -1,0 +1,495 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>水电收费</title>
+	<link rel="stylesheet" rel="Stylesheet" href="css/pc.css" media="only screen and (min-width: 1050px)">
+	<link rel="stylesheet" type="text/css" href="css/slab.css" media="only screen and (min-width: 768px) and (max-width: 1050px)"  />
+	<link rel="stylesheet" type="text/css" href="css/phone.css" media="only screen and (max-width: 768px)" />
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/upload.css"/>
+	<link rel="stylesheet" type="text/css" href="js/My97DatePicker/skin/WdatePicker.css">
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="js/dmuploader.min.js"></script>
+	<script type="text/javascript" src="js/feature.js"></script>	
+	<script type="text/javascript" src="js/upload.js"></script>
+	<script type="text/javascript" src="js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+
+<body class="bg">
+
+	<!-- head -->
+	<div id="head">
+		<div class="container">
+			<dl class="clearfix">
+				<dt>
+					<img src="images/logo01.png" alt="" class="img-responsive"/>
+				</dt>
+				<dt>
+					<img src="images/logo02.png" alt="" class="img-responsive"/>
+				</dt>
+				<dt class="marbor">
+					水电收费管理系统
+				</dt>
+				<dd class="dnone">
+					<div>
+						<img src="images/exit.png" alt="" class="img-responsive" />
+					</div>
+					<span><a href="">退出</a></span>
+				</dd>
+				<dd>
+					<div>
+						<img src="images/user.png" alt="" class="img-responsive" />
+					</div>
+					<span>admin</span>
+				</dd>
+			</dl>
+		</div>
+	</div>
+
+
+
+	<div id="manage" class="container clearfix">
+		<div class="conleft">
+			<dl class="clearfix">
+				<dd>学生管理</dd>
+				<dd>宿舍管理</dd>
+				<dd>水费管理</dd>
+				<dd>电费管理</dd>
+				<dd>缴费通知</dd>
+				<dd>信息汇总查询</dd>
+				<dd>用户管理</dd>
+				<dd>系统设置</dd>
+				<dd>退出</dd>
+			</dl>
+		</div>
+
+		<div class="conright">
+			<div class="bannertop clearfix">
+				<i>
+					<img src="images/btn－trash.png" alt="" class="img-responsive"/>
+				</i>
+				<img src="images/btn-location right.png" alt="" class="img-responsive left"/>
+
+				<img src="images/btn-location left.png" alt="" class="img-responsive left" />
+				<p>水电查询</p>
+				<img src="images/btn-location right.png" alt="" class="img-responsive left"/>
+			</div>
+			<div class="bannermid">
+				<ul>
+					<li>
+						<dl class="clearfix">
+							<dt>
+								<span>年级:</span>
+								<select name="" id="">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</dt>
+							<dt>
+								<span>专业:</span>
+								<select name="" id="">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</dt>
+							<dt>
+								<span>年级:</span>
+								<input type="text" name="" id="" class="inputs" />
+								<input type="button" value="查询" class="but" />
+							</dt>
+							<dd>
+								<input type="button" value="刷新" class="but" />
+							</dd>
+							<dd>
+								<input type="button" value="导入" class="but col1" id="exl" />
+							</dd>
+							<dd>
+								<input type="button" value="新增" class="but col2" id="new" />
+							</dd>
+						</dl>
+					</li>
+					
+					<div id="replace">
+					<li>
+						<table>
+							<thead>
+								<tr>
+									<th>
+										<input type="checkbox" name="allchecked" id="allchecked" />
+									</th>
+									<th>寝室<span class="none" style="cursor: pointer;">X</span></th>
+									<th>上月水费抄表<span class="none" style="cursor: pointer;">X</span></th>
+									<th>本月水费抄表<span class="none" style="cursor: pointer;">X</span></th>
+									<th>水费单价<span class="none" style="cursor: pointer;">X</span></th>
+									<th>总的水费<span class="none" style="cursor: pointer;">X</span></th>
+									<th>上月用电抄表<span class="none" style="cursor: pointer;">X</span></th>
+									<th>本月用电抄表<span class="none" style="cursor: pointer;">X</span></th>
+									<th>电费单价<span class="none" style="cursor: pointer;">X</span></th>
+									<th>总电费<span class="none" style="cursor: pointer;">X</span></th>
+									<th>水电合计<span class="none" style="cursor: pointer;">X</span></th>
+									<th>月份</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<input type="checkbox" name="che" id="che" />
+									</td>
+									<td>5b203</td>
+									<td>0123456789</td>
+									<td>张三三三</td>
+									<td>男</td>
+									<td>12</td>
+									<td>计算机科学与技术（专升本）</td>
+									<td>02</td>
+									<td>辅导员一</td>
+									<td>123456789</td>
+									<td>12345678901234567</td>
+									<td>
+										<a href="">
+											<img src="images/btn－pencil.png" alt=""/>
+										</a>
+										<a href="">
+											<img src="img/btn－trash.png" alt=""/>
+										</a>
+									</td>
+								</tr>
+								
+								
+							</tbody>
+						</table>
+					</li>
+
+					<li class="mg">
+						<span onclick="javascript:pageing(this);">首页</span>
+						<span>上一页</span>
+						<span class="current">1</span>
+						<span>2</span>
+						<span>3</span>
+						<span>4</span>
+						<span>5</span>
+						<span>下一页</span>
+						<span>尾页</span>
+					</li>
+					</div>
+			
+
+
+				</ul>
+			</div>
+			<div class="phoneshow">
+				<p class="mx">水电费明细</p>
+				<dl>
+					<dt>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>202</label>
+							</li>
+							<li>
+								日期:<label>2015-12</label>
+							</li>
+							<li>
+								总价:<strong>300</strong>
+							</li>
+							<li class="current">
+								<img src="images/ico_more_right.png" alt="" class="img_responsive" />
+							</li>
+						</ul>
+					</dt>
+					<dd>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>202</label>
+							</li>
+							<li>
+								日期:<label>2015-12</label>
+							</li>
+							<li>
+								总价:<strong>300</strong>
+							</li>
+							<li class="current">
+								<img src="images/ico_more_right.png" alt="" class="img_responsive" />
+							</li>
+						</ul>
+					</dt>
+					<dd>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>202</label>
+							</li>
+							<li>
+								日期:<label>2015-12</label>
+							</li>
+							<li>
+								总价:<strong>300</strong>
+							</li>
+							<li class="current">
+								<img src="images/ico_more_right.png" alt="" class="img_responsive" />
+							</li>
+						</ul>
+					</dt>
+					<dd>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+
+				<dl>
+					<dt>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>202</label>
+							</li>
+							<li>
+								日期:<label>2015-12</label>
+							</li>
+							<li>
+								总价:<strong>300</strong>
+							</li>
+							<li class="current">
+								<img src="images/ico_more_right.png" alt="" class="img_responsive" />
+							</li>
+						</ul>
+					</dt>
+					<dd>
+						<ul class="clearfix">
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+							<li>
+								电费总价:<label>121</label>
+							</li>
+						</ul>
+					</dd>
+				</dl>
+			</div>
+		</div>
+	</div>
+
+	<div class="bgs"></div>
+	<div class="mycar-list">
+		<div class="top clearfix">
+			<p>增加学生</p>
+			<div class="cha">X</div>
+		</div>
+		<div class="contain clearfix">
+			<dl>
+				<dt>
+					<span>寝室:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dt>
+				<dt>
+					<span>姓名:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dt>
+				<dt>
+					<span>性别:</span>
+					<select name="" id="">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</dt>
+				<dt>
+					<span>年级:</span>
+					<select name="" id="">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</dt>
+				<dt>
+					<span>班级:</span>
+					<select name="" id="">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</dt>
+				<dt>
+					<input type="button" value="取消"
+					class="butn" 
+					/>
+				</dt>
+			</dl>
+			<dl>
+				<dd>
+					<span>学号:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dd>
+				<dd>
+					<span>专业:</span>
+					<select name="" id="">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</dd>
+				<dd>
+					<span>辅导员:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dd>
+				<dd>
+					<span>电话:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dd>
+				<dd>
+					<span>邮箱:</span>
+					<input type="text" name="" id="" class="inputs" />
+				</dd>
+				<dd>
+					<input type="button" value="确定" class="butn2" 
+					/>
+				</dd>
+			</dl>
+		</div>
+	</div>
+	
+	   
+
+<!-- 	<div class="mycar-list2">
+		<div class="top clearfix">
+			<p>Excel表格导入</p>
+			<div class="cha">X</div>
+		</div>
+		<div class="contain">
+			<div class="conbg"></div>
+			<div id="fileList"></div>
+			<div id="drag-and-drop-zone" class="uploader">
+          		<div>拖拽EXCEL表格上传</div>
+         		<div class="or">-或者-</div>
+            	<div class="browser">
+            	<label>
+              		<span>点击打开上传文件窗口</span>
+              		<input type="file" name="upload" multiple="multiple" title='Click to add Files'>
+            	</label>
+          		</div>
+        	</div>
+		</div>
+	</div> -->
+	<div class="mycar-list2">
+		<div class="top clearfix">
+			<p>Excel表格导入</p>
+			<div class="cha">X</div>
+		</div>
+		<div class="contain">
+			<div id="drag-and-drop-zone" class="uploader">
+				<p id="ptext">点击打开上传文件窗口</p>
+				<div class="form">
+            	<form action="mainstay/mainstay_uploads.do" method="post" enctype="multipart/form-data" id="myForm">
+            		<input type="file" name="upload" class="put" id="upload" />
+
+            		<input type="text" class="date" id="date"  onclick="WdatePicker({dateFmt:'yyyy-MM'})" placeholder="点击选择月份" />
+            		<input type="submit" name="提交" class="sub" />
+            		<input type="text" class="xs" id="xs" readonly />
+            		<p class="tp"></p>
+            	</form>					
+				</div>
+        	</div>
+		</div>
+	</div>
+	
+	<div class="tipbox" id="tipbox">
+		<dl>
+			<dt class="tipx clearfix"><div class="df">缴费提示</div><div class="ds" id="ds">X</div></dt>
+			<dd class="tipboxs">您的上个月水电费还没交!</dd>
+		</dl>
+	</div>
+<!-- 	<script type="text/javascript">
+		//文件上传
+	var uploaded = Object.create(uploaded);
+		uploaded.uploadFile();
+	</script> -->
+</body>
+<script type="text/javascript">
+	//基本特效
+	var feature = Object.create(feature),
+		tipboxw = document.getElementById('tipbox'),
+		ds= document.getElementById('ds');
+		flag = false;
+	feature.ftures();
+
+	if (flag) {
+	setTimeout(function(){
+		tipboxw.style.bottom = '5px';
+		},1);
+	}
+	
+	ds.addEventListener("click",function(){
+		tipboxw.style.bottom = '-160px';
+	});
+</script>
+</html>

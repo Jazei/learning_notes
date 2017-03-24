@@ -1,0 +1,7 @@
+#fileList {display:none;position:absolute;top:0;left:0;width:50%;height: 50%;background:#FFF;margin:89px 0 0 157px;border: 6px solid #527FE2;border-radius: 10px;z-index:999999;}
+// #fileList .file {width: 290px;margin-bottom: 15px;}
+#fileList .info {width: 267px;max-height: 53px;display: block;overflow: hidden;line-height: 1.5;margin: 0 auto;margin-top: 20px;}
+#fileList .filename {font-weight: bold;}
+#fileList .bar {border: solid 1px #C0C0C0;height: 12px;margin:0 auto;margin-top: 5px;padding: 1px;width: 262px;}
+#fileList .suc {width:39px;height:39px;margin:10px auto;}
+#fileList .progress {height: 12px; background: -webkit-linear-gradient(left, red , blue); /* Safari 5.1 - 6.0 */background: -o-linear-gradient(right, red, blue); /* Opera 11.1 - 12.0 */background: -moz-linear-gradient(right, red, blue); /* Firefox 3.6 - 15 */background: linear-gradient(to right, red , blue); /* 标准的语法（必须放在最后） */}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>链式操作风格</title>
+	<script type="text/javascript" src="./JS/jquery-3.1.1.js"></script><!-- 导入jQuery -->
+	<script type="text/javascript">
+		$("level1 > a").click(function(){
+			$this.addClass("current")
+			.next().show()
+			.parent().siblings().children("a").removeClass("current")
+			.next().hide();
+			return false;
+		});
+	</script>
+	<style type="text/css">
+		.menu{ list-style: none;padding-left: 0px;width: 150px; height: 99px; margin-bottom:70px}
+		.menu a{text-decoration: none;color: #464646; display: block;border: 1px solid #cecece;background: rgba(255, 120, 3, 0.59);height: 40px;line-height: 40px}
+		.level2{list-style: none;padding-left: 0px;background: #ccc;}
+		.level2 li a{display: block;}
+		.current{display: none;}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<ul class="menu">
+			<li class="level1">
+				<a href="#none">衬衫</a>
+				<ul class="level2">
+					<li><a href="#none">短袖衬衫</a></li>
+					<li><a href="#none">长袖衬衫</a></li>
+					<li><a href="#none">短袖T恤</a></li>
+					<li><a href="#none">长袖T恤</a></li>
+				</ul>
+			</li>
+			<li class="level1">
+				<a href="#none">卫衣</a>
+				<ul class="level2">
+					<li><a href="#none">开襟卫衣</a></li>
+					<li><a href="#none">短袖卫衣</a></li>
+					<li><a href="#none">加绒卫衣</a></li>
+					<li><a href="#none">童装卫衣</a></li>
+				</ul>
+			</li><li class="level1">
+			 	<a href="#none">裤子</a>
+				<ul class="level2">
+					<li><a href="#none">短裤</a></li>
+					<li><a href="#none">休闲裤</a></li>
+					<li><a href="#none">牛仔裤</a></li>
+					<li><a href="#none">卡其裤</a></li>
+				</ul>
+			
+		</ul>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas</title>
+	<script type="text/javascript">
+		window.onload=function()
+		{
+			var drawimg = document.getElementById("drawimg");
+			var image = document.getElementById('image')
+			
+			var context = drawimg.getContext("2d");
+			context.drawImage(image,10,10); 
+			}
+	</script>
+</head>
+<body>
+	<canvas id="drawimg" width="800" height="600" style="border: 3px solid black;">asdasd</canvas>
+	<img src="bg1.jpg" id="image" style="display: none;"> 
+</body>
+</html>

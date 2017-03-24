@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>带缓冲的广告</title>
+	<style type="text/css">
+		#music{ width:241px; height:51px;background: url(music.jpg) no-repeat 0 0; float: left;}
+		#mHide{background: url(music.jpg) no-repeat -242px 0px;width:35px; height:51px; float: left;}
+		#mShow{display:none;background: url(music.jpg) no-repeat -278px 0px; width:53px; height:51px;float: left;}
+	</style>
+	<script type="text/javascript">
+		var mwidth1 = 242; //最初始的宽
+		var mwidth2 = 0; //最初始的宽
+		var temp = 10; //控制图片消失的速度
+		function getId(name)
+		{
+			return document.getElementById(name);
+		}
+		function mhide()
+		{
+
+			if (mwidth1<=0) 
+			{
+				clearTimeout(s);
+				getId("mShow").style.display="block";
+				getId("mHide").style.display="none";
+				getId("music").style.width= 0+"px";
+				mwidth1 =242;
+			}else
+			{
+				mwidth1 -= temp;
+				getId("music").style.width=mwidth1+"px";
+				var s=setTimeout(mhide,10);	
+			}
+			
+		}
+		function mshow()
+		{
+			if (mwidth2 < 242) 
+			{
+				mwidth2 += temp;
+				getId("music").style.width= mwidth2+"px";
+				var t=setTimeout(mshow,10);
+
+			}else{
+				clearTimeout(t);
+				getId("mShow").style.display="none";
+				getId("mHide").style.display="block";
+				getId("music").style.width= 242+"px";
+				mwidth2 =0;
+			}
+			
+		}
+	</script>
+</head>
+<body>
+	<div id="music"></div>
+	<a href="javascript:void(0)" id="mHide" onclick="mhide()"></a>
+	<a href="javascript:void(0)" id="mShow" onclick="mshow()"></a> 
+</body>
+</html>

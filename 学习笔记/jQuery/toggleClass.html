@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> toggleClass </title>
+		<script type="text/javascript" src="JS/jquery-3.1.1.min.js" ></script>
+		<style type="text/css">
+			div{width: 100px; height: 80px; float: left;margin: 20px;}
+			.a{background: red;}
+			.b{background: blue;}
+			.c{background: yellow;}
+			.d{background: green;}
+			.e{background: saddlebrown;}
+			.col{color: white;}
+			.back{background: fuchsia;}
+		</style>
+	</head>
+	<body>
+		<div class="a">第一个DIV</div>
+		<div class="b"> 第二个DIV</div>
+		<div class="c">第三个DIV</div>
+		<div class="d">第四个DIV</div>
+		<div class="e" hidden="hidden">第五个DIV</div>
+		<input type="button" class="btn1" value="改变1、2 DIV字体颜色背景"/>
+		<input type="button" class="btn2" hidden value="测试toggle控制行为的切换行为"/>
+	</body>
+	<script type="text/javascript">
+		$(".btn1").click(function(){
+			$(".a").toggleClass("col");
+			$(".b").toggleClass("back col");
+		});
+		
+		//测试toggle控制行为的切换行为
+		$(".e").toggle(function(){},function(){});
+	</script>
+</html>

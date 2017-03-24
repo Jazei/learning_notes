@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>swiper测试 第五节课 分组显示 +当前页面居中显示</title>
+	<link rel="stylesheet" type="text/css" href="swiper.min.css">
+	<style type="text/css">
+	.swiper-container{width: 500px;height: 300px;margin: 20px auto; }
+	.swiper-slide{background: #333;text-align: center;line-height: 300px;}
+	.swiper-wrapper div:nth-child(2n){background: blue;width: 20%}
+	.swiper-wrapper div:nth-child(3n){background: red;width: 50%}
+	.swiper-wrapper div:nth-child(4){background: yellow;}
+	.swiper-wrapper div:nth-child(5){background: green;}
+	</style>
+</head>
+<body>
+<div class="swiper-container">
+	<div class="swiper-wrapper">
+		<div class="swiper-slide">第一页</div>
+		<div class="swiper-slide">第二页</div>
+		<div class="swiper-slide">第三页</div>
+		<div class="swiper-slide">第四页</div>
+		<div class="swiper-slide">第五页</div>
+		<div class="swiper-slide">第六页</div>
+		<div class="swiper-slide">第七页</div>
+		<div class="swiper-slide">第八页</div>
+		<div class="swiper-slide">第九页</div>
+		<div class="swiper-slide">第十页</div>
+		<div class="swiper-slide">第十一页</div>
+	</div>
+	<div class="swiper-pagination"></div>
+</div>
+<script src="swiper.min.js"></script>
+<script >
+// 分组显示：slidesPerView:3 //三个slide 为一组
+// 当前页面居中显示 ,centeredSlides:true
+	var swiper =new Swiper('.swiper-container',{pagination:'.swiper-pagination',paginationClickable:true,spaceBetween:10,slidesPerView:3,centeredSlides:true});
+</script>
+</body>
+</html>

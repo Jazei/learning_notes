@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Webkit引擎渐变效果</title>
+	<style type="text/css">
+		.div1{width: 400px; height: 200px;border:2px solid #fcf;padding: 4px;background: -webkit-gradient(linear,left top,left bottom,from(blue),to(red),color-stop(25%,green),color-stop(50%,white),color-stop(75%,black));-webkit-background-origin:padding-box;-webkit-background-clip:content-box;}
+		.div2{width: 400px;height: 200px;border:2px solid #fcf;padding:4px;background:-webkit-gradient(radial,120 100 ,10,200 100,100,from(red),to(blue));-webkit-background-origin:padding-box;background-clip:content-box; }
+	</style>
+</head>
+<body>
+	<div class="div1"></div>
+	<p></p>
+	<div class="div2"></div>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> html()、text()和val()的测试</title>
+		<script type="text/javascript" src="JS/jquery-3.1.1.min.js" ></script>
+	</head>
+	<body>
+		<textarea class="a">
+			你好啊！
+			<span>完美的</span>
+			<strong>新<span>/新</span></strong>
+			<div>世界 !
+				<h1>真是个美好的世界！</h1>
+			</div>
+			<span>阿萨德撒大</span>
+			<input type="text" value="我是input 文本框" />
+		</textarea>
+		
+		<p class="b">
+			<input type="text" value="我是input 文本框" />
+			你好啊！
+			<span>完美的</span>
+			<strong>新<span>/新</span></strong>
+			<div>世界 !
+				<h1>真是个美好的世界！</h1>
+			</div>
+			<span>阿萨德撒大</span>
+			
+		</p>
+		
+		<div class="c">
+			你好啊！
+			<span>完美的</span>
+			<strong>新<span>/新</span></strong>
+			<div>世界 !
+				<h1>真是个美好的世界！</h1>
+			</div>
+			<span>阿萨德撒大</span>
+			<input type="text" value="我是input 文本框" />
+		</div>
+	</body>
+	<script type="text/javascript">
+	 var $a=$(".a").html();
+	 var $b=$(".a").text();
+	 var $c=$(".a").val();
+	 alert("textarea"+$a);
+	 alert("textarea"+$b);
+	 alert("textarea"+$c);
+	 
+	 
+	 var $e=$(".b").html();
+	 var $f=$(".b").text();
+	 var $g=$(".b").val();
+	 alert("p"+$e);
+	 alert("p"+$f);
+	 alert("p"+$g);
+	 
+	 
+	 var $h=$(".c").html();
+	 var $i=$(".c").text();
+	 var $j=$(".c").val();
+	 alert("div"+$h);
+	 alert("div"+$i);
+	 alert("div"+$j);
+	</script>
+</html>

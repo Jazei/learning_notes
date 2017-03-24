@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3的新增3个属性选择器</title>
+	<style type="text/css">
+		div[class*="d"]{color: red;font-size: 25px;}
+		div[class~="add"]{color: blue;font-size: 15px;}
+		div[class|="add"]{color: yellow;font-size: 35px;}
+	</style>
+</head>
+<body>
+	<div class="abc add">这是第一个DIV</div>
+	<div class="bcd-add"> 这是第二个DIV</div> 
+	<div class="add-cde"> 这是第三个DIV</div>
+	<div class="-add d-ef">这是第四个DIV</div> 
+</body>
+</html>

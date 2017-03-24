@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.centerWrap{position: relative;width: 1200px;height: 800px;margin: 0 auto;}
+			.main{transition: all .3s;position: absolute;z-index: 6;width: 400px;border-bottom: 1px solid #4E6A6A;height: 60px;line-height: 50px;background:seagreen;color:white;text-align: center;}
+			.fF{position: relative;width: 400px;height: 50px;position: absolute;top: 0;}
+			.fF div{position: absolute;border-bottom: 1px solid #999;height: 50px;line-height: 50px;background:#E3E3E3;color:#939393;text-align: center;}
+			.fF div:hover{background: #6a9090;color: white;}
+			.sF1{z-index: 5;top: 10px;width: 400px;}
+			.sF2{z-index: 4;top: 12px;left: 2px;width: 396px ;}
+			.sF3{z-index: 3;top: 14px;left: 4px;width: 392px ;}
+			.sF4{z-index: 2;top: 16px;left: 6px;width: 388px ;}
+			.sF5{z-index: 1;top: 18px;left: 8px;width: 384px ;}
+			.main:active{transform: matrix(1,0.0,-0.2,0.6,-6,-1);transition: all .3s;box-shadow: 0 20px 50px -10px #000;color:#C0C0C0;background: #3fbf78;}
+		</style>
+		<script src="../../AJAX/js/jquery-1.8.3.min.js"></script>
+	</head>
+	<body>
+		<div class="centerWrap">
+			<div class="main">
+				选项
+			</div>
+			<div class="fF">
+				<div class="sF1">
+					菜单一
+				</div>
+				<div class="sF2">
+					菜单二
+				</div>
+				<div class="sF3">
+					菜单三
+				</div>
+				<div class="sF4">
+					菜单四
+				</div>
+				<div class="sF5">
+					菜单五
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript">
+			$(function(){
+				$(".main").bind("mousedown",function(){
+					if($(".fF").css("margin-top")=="60px"){
+						$(".fF").animate({"margin-top":"5px"});
+						$(".sF1").animate({"top":"10px","left":"0px","width":"400px"});
+						$(".sF2").animate({"top":"12px","left":"2px","width":"396px"});
+						$(".sF3").animate({"top":"14px","left":"4px","width":"392px"});
+						$(".sF4").animate({"top":"16px","left":"6px","width":"388px"});
+						$(".sF5").animate({"top":"18px","left":"8px","width":"384px"});
+					}else{
+						$(".fF").animate({"margin-top":"60px"});
+						$(".sF1").animate({"top":"0px","width":"400px","left":"0px"});
+						$(".sF2").animate({"top":"50px","width":"400px","left":"0px"});
+						$(".sF3").animate({"top":"100px","width":"400px","left":"0px"});
+						$(".sF4").animate({"top":"150px","width":"400px","left":"0px"});
+						$(".sF5").animate({"top":"200px","width":"400px","left":"0px"});
+					}
+					
+				})
+			});
+		</script>
+	</body>
+</html>
